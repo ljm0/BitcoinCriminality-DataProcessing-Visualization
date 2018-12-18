@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="scala-spark-graphx-bitcointransaction-build"
+		revision="0.1.0-SNAPSHOT"
+		extra-scalaVersion="2.12"
+		extra-sbtVersion="1.0"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, pom, scala-tool"
+		date="20181005103235"/>
+	<dependencies>
+		<module organisation="com.github.sbt" name="sbt-jacoco">
+			<revision name="3.0.3" status="release" pubdate="20171023175751" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="58">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="3220" time="530" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.github.sbt\sbt-jacoco\ivy-3.0.3.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.github.sbt\sbt-jacoco\ivy-3.0.3.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.sbt/sbt-jacoco/scala_2.12/sbt_1.0/3.0.3/ivys/ivy.xml"/>
+				<caller organisation="default" name="scala-spark-graphx-bitcointransaction-build" conf="compile, runtime-internal, runtime, optional" rev="3.0.3" rev-constraint-default="3.0.3" rev-constraint-dynamic="3.0.3" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-jacoco" type="jar" ext="jar" status="successful" details="" size="125228" time="863" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.github.sbt\sbt-jacoco\jars\sbt-jacoco-3.0.3.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.github.sbt/sbt-jacoco/scala_2.12/sbt_1.0/3.0.3/jars/sbt-jacoco.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jsuereth" name="scala-arm_2.12">
+			<revision name="2.0" status="release" pubdate="20161116000422" resolver="public" artresolver="public" homepage="http://jsuereth.com/scala-arm" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="63">
+				<license name="BSD-Style" url="http://www.opensource.org/licenses/bsd-license.php"/>
+				<metadata-artifact status="successful" details="" size="2256" time="51" location="C:\Users\hy822\.ivy2\cache\com.jsuereth\scala-arm_2.12\ivy-2.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.jsuereth\scala-arm_2.12\ivy-2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.12/2.0/scala-arm_2.12-2.0.pom"/>
+				<caller organisation="com.github.sbt" name="sbt-jacoco" conf="compile" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="3.0.3"/>
+				<artifacts>
+					<artifact name="scala-arm_2.12" type="jar" ext="jar" status="successful" details="" size="82674" time="389" location="C:\Users\hy822\.ivy2\cache\com.jsuereth\scala-arm_2.12\jars\scala-arm_2.12-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jsuereth/scala-arm_2.12/2.0/scala-arm_2.12-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jacoco" name="org.jacoco.report">
+			<revision name="0.7.9" status="release" pubdate="20170205225929" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="62">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="2027" time="32" location="C:\Users\hy822\.ivy2\cache\org.jacoco\org.jacoco.report\ivy-0.7.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.jacoco\org.jacoco.report\ivy-0.7.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.7.9/org.jacoco.report-0.7.9.pom"/>
+				<caller organisation="com.github.sbt" name="sbt-jacoco" conf="compile" rev="0.7.9" rev-constraint-default="0.7.9" rev-constraint-dynamic="0.7.9" callerrev="3.0.3"/>
+				<artifacts>
+					<artifact name="org.jacoco.report" type="jar" ext="jar" status="successful" details="" size="127973" time="666" location="C:\Users\hy822\.ivy2\cache\org.jacoco\org.jacoco.report\jars\org.jacoco.report-0.7.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jacoco/org.jacoco.report/0.7.9/org.jacoco.report-0.7.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jacoco" name="org.jacoco.core">
+			<revision name="0.7.9" status="release" pubdate="20170205225913" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="60">
+				<license name="Eclipse Public License v1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="1895" time="32" location="C:\Users\hy822\.ivy2\cache\org.jacoco\org.jacoco.core\ivy-0.7.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.jacoco\org.jacoco.core\ivy-0.7.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.pom"/>
+				<caller organisation="com.github.sbt" name="sbt-jacoco" conf="compile" rev="0.7.9" rev-constraint-default="0.7.9" rev-constraint-dynamic="0.7.9" callerrev="3.0.3"/>
+				<caller organisation="org.jacoco" name="org.jacoco.report" conf="default, compile, runtime, master" rev="0.7.9" rev-constraint-default="0.7.9" rev-constraint-dynamic="0.7.9" callerrev="0.7.9"/>
+				<artifacts>
+					<artifact name="org.jacoco.core" type="jar" ext="jar" status="successful" details="" size="125643" time="621" location="C:\Users\hy822\.ivy2\cache\org.jacoco\org.jacoco.core\jars\org.jacoco.core-0.7.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/jacoco/org.jacoco.core/0.7.9/org.jacoco.core-0.7.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-debug-all">
+			<revision name="5.2" status="release" pubdate="20161223104319" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="61">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="1981" time="30" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-debug-all\ivy-5.2.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-debug-all\ivy-5.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.pom"/>
+				<caller organisation="org.jacoco" name="org.jacoco.core" conf="default, compile, runtime, master" rev="5.2" rev-constraint-default="5.2" rev-constraint-dynamic="5.2" callerrev="0.7.9"/>
+				<caller organisation="org.jacoco" name="org.jacoco.report" conf="default, compile, runtime, master" rev="5.2" rev-constraint-default="5.2" rev-constraint-dynamic="5.2" callerrev="0.7.9"/>
+				<artifacts>
+					<artifact name="asm-debug-all" type="jar" ext="jar" status="successful" details="" size="387903" time="968" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-debug-all\jars\asm-debug-all-5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-debug-all/5.2/asm-debug-all-5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.lightbend.paradox" name="paradox-theme-generic">
+			<revision name="0.3.1" status="release" pubdate="20170927054258" resolver="public" artresolver="public" homepage="https://github.com/lightbend/paradox" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="59">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
+				<metadata-artifact status="successful" details="" size="2001" time="31" location="C:\Users\hy822\.ivy2\cache\com.lightbend.paradox\paradox-theme-generic\ivy-0.3.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.lightbend.paradox\paradox-theme-generic\ivy-0.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/lightbend/paradox/paradox-theme-generic/0.3.1/paradox-theme-generic-0.3.1.pom"/>
+				<caller organisation="com.github.sbt" name="sbt-jacoco" conf="compile" rev="0.3.1" rev-constraint-default="0.3.1" rev-constraint-dynamic="0.3.1" callerrev="3.0.3"/>
+				<artifacts>
+					<artifact name="paradox-theme-generic" type="jar" ext="jar" status="successful" details="" size="94396" time="462" location="C:\Users\hy822\.ivy2\cache\com.lightbend.paradox\paradox-theme-generic\jars\paradox-theme-generic-0.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/lightbend/paradox/paradox-theme-generic/0.3.1/paradox-theme-generic-0.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-compiler">
+			<revision name="2.12.4" status="release" pubdate="20171011094031" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="35">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2974" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang\scala-compiler\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.4/scala-compiler-2.12.4.pom"/>
+				<caller organisation="com.propensive" name="rapture-net_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-json_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-io_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-core_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-mime_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-uri_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-json-circe_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-data_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-codec_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-base_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="scala-compiler" type="jar" ext="jar" status="no" details="" size="9790479" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.12.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.12.4/scala-compiler-2.12.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang.modules" name="scala-xml_2.12">
+			<revision name="1.0.6" status="release" pubdate="20161101152105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), runtime, compile(*), master, master(compile)" position="36">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="no" details="" size="3024" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.0.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.pom"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-plugin_2.12" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.3.1"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="1.0.6" rev-constraint-default="1.0.6" rev-constraint-dynamic="1.0.6" callerrev="2.12.4"/>
+				<artifacts>
+					<artifact name="scala-xml_2.12" type="bundle" ext="jar" status="no" details="" size="547860" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\bundles\scala-xml_2.12-1.0.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.6/scala-xml_2.12-1.0.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.5" status="release" pubdate="20161029011007" resolver="public" artresolver="public" evicted="latest-revision" evicted-reason="" homepage="http://www.scala-lang.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="BSD 3-clause" url="http://opensource.org/licenses/BSD-3-Clause"/>
+				<metadata-artifact status="successful" details="" size="2518" time="29" location="C:\Users\hy822\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.0.5.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.scala-lang.modules\scala-xml_2.12\ivy-1.0.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.12/1.0.5/scala-xml_2.12-1.0.5.pom"/>
+				<evicted-by rev="1.0.6"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-plugin_2.12" conf="compile, runtime" rev="1.0.5" rev-constraint-default="1.0.5" rev-constraint-dynamic="1.0.5" callerrev="1.3.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.codacy" name="sbt-codacy-coverage">
+			<revision name="1.3.11" status="release" pubdate="20171006133123" resolver="public" artresolver="public" homepage="http://www.github.com/codacy/sbt-codacy-coverage/" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="24">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2863" time="34" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.codacy\sbt-codacy-coverage\ivy-1.3.11.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.codacy\sbt-codacy-coverage\ivy-1.3.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/codacy/sbt-codacy-coverage_2.12_1.0/1.3.11/sbt-codacy-coverage-1.3.11.pom"/>
+				<caller organisation="default" name="scala-spark-graphx-bitcointransaction-build" conf="compile, runtime-internal, runtime, optional" rev="1.3.11" rev-constraint-default="1.3.11" rev-constraint-dynamic="1.3.11" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-codacy-coverage" type="jar" ext="jar" status="successful" details="" size="17566" time="374" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.codacy\sbt-codacy-coverage\jars\sbt-codacy-coverage-1.3.11.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/codacy/sbt-codacy-coverage_2.12_1.0/1.3.11/sbt-codacy-coverage-1.3.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-json-circe_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130102842" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="47">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2348" time="27" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-json-circe_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-json-circe_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-json-circe_2.12/2.0.0-M8/rapture-json-circe_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.codacy" name="sbt-codacy-coverage" conf="default, compile, runtime, master" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="1.3.11"/>
+				<artifacts>
+					<artifact name="rapture-json-circe_2.12" type="jar" ext="jar" status="successful" details="" size="18602" time="265" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-json-circe_2.12\jars\rapture-json-circe_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json-circe_2.12/2.0.0-M8/rapture-json-circe_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-jawn_2.12">
+			<revision name="0.7.0" status="release" pubdate="20170117172901" resolver="public" artresolver="public" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="56">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1957" time="28" location="C:\Users\hy822\.ivy2\cache\io.circe\circe-jawn_2.12\ivy-0.7.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\io.circe\circe-jawn_2.12\ivy-0.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.7.0/circe-jawn_2.12-0.7.0.pom"/>
+				<caller organisation="com.propensive" name="rapture-json-circe_2.12" conf="compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="circe-jawn_2.12" type="jar" ext="jar" status="successful" details="" size="12452" time="243" location="C:\Users\hy822\.ivy2\cache\io.circe\circe-jawn_2.12\jars\circe-jawn_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-jawn_2.12/0.7.0/circe-jawn_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.spire-math" name="jawn-parser_2.12">
+			<revision name="0.10.4" status="release" pubdate="20161113050016" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/non/jawn" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="57">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="no" details="" size="2769" time="0" location="C:\Users\hy822\.ivy2\cache\org.spire-math\jawn-parser_2.12\ivy-0.10.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.12/0.10.4/jawn-parser_2.12-0.10.4.pom"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="0.10.4" rev-constraint-default="0.10.4" rev-constraint-dynamic="0.10.4" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="jawn-parser_2.12" type="jar" ext="jar" status="no" details="" size="74239" time="0" location="C:\Users\hy822\.ivy2\cache\org.spire-math\jawn-parser_2.12\jars\jawn-parser_2.12-0.10.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/spire-math/jawn-parser_2.12/0.10.4/jawn-parser_2.12-0.10.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-core_2.12">
+			<revision name="0.7.0" status="release" pubdate="20170117172911" resolver="public" artresolver="public" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="48">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1956" time="24" location="C:\Users\hy822\.ivy2\cache\io.circe\circe-core_2.12\ivy-0.7.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\io.circe\circe-core_2.12\ivy-0.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-core_2.12/0.7.0/circe-core_2.12-0.7.0.pom"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<caller organisation="com.propensive" name="rapture-json-circe_2.12" conf="compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="circe-core_2.12" type="jar" ext="jar" status="successful" details="" size="791099" time="1493" location="C:\Users\hy822\.ivy2\cache\io.circe\circe-core_2.12\jars\circe-core_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-core_2.12/0.7.0/circe-core_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-core_2.12">
+			<revision name="0.9.0" status="release" pubdate="20170116003305" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="50">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="4592" time="27" location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-core_2.12\ivy-0.9.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-core_2.12\ivy-0.9.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/0.9.0/cats-core_2.12-0.9.0.pom"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="compile, runtime" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="cats-core_2.12" type="jar" ext="jar" status="successful" details="" size="2696252" time="1983" location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-core_2.12\jars\cats-core_2.12-0.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-core_2.12/0.9.0/cats-core_2.12-0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-kernel_2.12">
+			<revision name="0.9.0" status="release" pubdate="20170116003107" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="55">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="3665" time="30" location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-kernel_2.12\ivy-0.9.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-kernel_2.12\ivy-0.9.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/0.9.0/cats-kernel_2.12-0.9.0.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="cats-kernel_2.12" type="jar" ext="jar" status="successful" details="" size="4241540" time="1893" location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-kernel_2.12\jars\cats-kernel_2.12-0.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-kernel_2.12/0.9.0/cats-kernel_2.12-0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="cats-macros_2.12">
+			<revision name="0.9.0" status="release" pubdate="20170116003024" resolver="public" artresolver="public" homepage="https://github.com/typelevel/cats" extra-info.apiURL="http://typelevel.org/cats/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="51">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="4028" time="40" location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-macros_2.12\ivy-0.9.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-macros_2.12\ivy-0.9.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/0.9.0/cats-macros_2.12-0.9.0.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="0.9.0" rev-constraint-default="0.9.0" rev-constraint-dynamic="0.9.0" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="cats-macros_2.12" type="jar" ext="jar" status="successful" details="" size="6438" time="316" location="C:\Users\hy822\.ivy2\cache\org.typelevel\cats-macros_2.12\jars\cats-macros_2.12-0.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/cats-macros_2.12/0.9.0/cats-macros_2.12-0.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="machinist_2.12">
+			<revision name="0.6.1" status="release" pubdate="20161029171418" resolver="public" artresolver="public" homepage="http://github.com/typelevel/machinist" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="54">
+				<license name="MIT" url="http://opensource.org/licenses/MIT"/>
+				<metadata-artifact status="successful" details="" size="1780" time="49" location="C:\Users\hy822\.ivy2\cache\org.typelevel\machinist_2.12\ivy-0.6.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.typelevel\machinist_2.12\ivy-0.6.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.1/machinist_2.12-0.6.1.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="0.6.1" rev-constraint-default="0.6.1" rev-constraint-dynamic="0.6.1" callerrev="0.9.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="0.6.1" rev-constraint-default="0.6.1" rev-constraint-dynamic="0.6.1" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="machinist_2.12" type="jar" ext="jar" status="successful" details="" size="33650" time="425" location="C:\Users\hy822\.ivy2\cache\org.typelevel\machinist_2.12\jars\machinist_2.12-0.6.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/machinist_2.12/0.6.1/machinist_2.12-0.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.github.mpilquist" name="simulacrum_2.12">
+			<revision name="0.10.0" status="release" pubdate="20161103151330" resolver="public" artresolver="public" homepage="http://github.com/mpilquist/simulacrum" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="52">
+				<license name="Three-clause BSD-style" url="https://github.com/mpilquist/simulacrum/blob/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="2068" time="32" location="C:\Users\hy822\.ivy2\cache\com.github.mpilquist\simulacrum_2.12\ivy-0.10.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.github.mpilquist\simulacrum_2.12\ivy-0.10.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/github/mpilquist/simulacrum_2.12/0.10.0/simulacrum_2.12-0.10.0.pom"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.9.0"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="0.10.0" rev-constraint-default="0.10.0" rev-constraint-dynamic="0.10.0" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="simulacrum_2.12" type="jar" ext="jar" status="successful" details="" size="81815" time="472" location="C:\Users\hy822\.ivy2\cache\com.github.mpilquist\simulacrum_2.12\jars\simulacrum_2.12-0.10.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/github/mpilquist/simulacrum_2.12/0.10.0/simulacrum_2.12-0.10.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.typelevel" name="macro-compat_2.12">
+			<revision name="1.1.1" status="release" pubdate="20161102094258" resolver="public" artresolver="public" homepage="https://github.com/milessabin/macro-compat" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="53">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1915" time="27" location="C:\Users\hy822\.ivy2\cache\org.typelevel\macro-compat_2.12\ivy-1.1.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.typelevel\macro-compat_2.12\ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.pom"/>
+				<caller organisation="com.github.mpilquist" name="simulacrum_2.12" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="0.10.0"/>
+				<artifacts>
+					<artifact name="macro-compat_2.12" type="jar" ext="jar" status="successful" details="" size="3180" time="193" location="C:\Users\hy822\.ivy2\cache\org.typelevel\macro-compat_2.12\jars\macro-compat_2.12-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/typelevel/macro-compat_2.12/1.1.1/macro-compat_2.12-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="io.circe" name="circe-numbers_2.12">
+			<revision name="0.7.0" status="release" pubdate="20170117172819" resolver="public" artresolver="public" homepage="https://github.com/circe/circe" extra-info.apiURL="https://circe.github.io/circe/api/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="49">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2033" time="45" location="C:\Users\hy822\.ivy2\cache\io.circe\circe-numbers_2.12\ivy-0.7.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\io.circe\circe-numbers_2.12\ivy-0.7.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.7.0/circe-numbers_2.12-0.7.0.pom"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="compile, runtime" rev="0.7.0" rev-constraint-default="0.7.0" rev-constraint-dynamic="0.7.0" callerrev="0.7.0"/>
+				<artifacts>
+					<artifact name="circe-numbers_2.12" type="jar" ext="jar" status="successful" details="" size="13234" time="298" location="C:\Users\hy822\.ivy2\cache\io.circe\circe-numbers_2.12\jars\circe-numbers_2.12-0.7.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/circe/circe-numbers_2.12/0.7.0/circe-numbers_2.12-0.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.codacy" name="coverage-parser_2.12">
+			<revision name="2.0.2" status="release" pubdate="20171006084054" resolver="public" artresolver="public" homepage="http://www.github.com/codacy/coverage-parser/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="46">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2110" time="25" location="C:\Users\hy822\.ivy2\cache\com.codacy\coverage-parser_2.12\ivy-2.0.2.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.codacy\coverage-parser_2.12\ivy-2.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/codacy/coverage-parser_2.12/2.0.2/coverage-parser_2.12-2.0.2.pom"/>
+				<caller organisation="com.codacy" name="sbt-codacy-coverage" conf="default, compile, runtime, master" rev="2.0.2" rev-constraint-default="2.0.2" rev-constraint-dynamic="2.0.2" callerrev="1.3.11"/>
+				<artifacts>
+					<artifact name="coverage-parser_2.12" type="jar" ext="jar" status="successful" details="" size="37597" time="350" location="C:\Users\hy822\.ivy2\cache\com.codacy\coverage-parser_2.12\jars\coverage-parser_2.12-2.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/codacy/coverage-parser_2.12/2.0.2/coverage-parser_2.12-2.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.codacy" name="codacy-api-scala_2.12">
+			<revision name="3.0.2" status="release" pubdate="20171005174940" resolver="public" artresolver="public" homepage="http://www.github.com/codacy/codacy-api-scala/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="25">
+				<license name="The MIT License (MIT)" url="https://raw.githubusercontent.com/codacy/codacy-api-scala/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="2898" time="33" location="C:\Users\hy822\.ivy2\cache\com.codacy\codacy-api-scala_2.12\ivy-3.0.2.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.codacy\codacy-api-scala_2.12\ivy-3.0.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/codacy/codacy-api-scala_2.12/3.0.2/codacy-api-scala_2.12-3.0.2.pom"/>
+				<caller organisation="com.codacy" name="coverage-parser_2.12" conf="compile, runtime" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="2.0.2"/>
+				<caller organisation="com.codacy" name="sbt-codacy-coverage" conf="default, compile, runtime, master" rev="3.0.2" rev-constraint-default="3.0.2" rev-constraint-dynamic="3.0.2" callerrev="1.3.11"/>
+				<artifacts>
+					<artifact name="codacy-api-scala_2.12" type="jar" ext="jar" status="successful" details="" size="98072" time="244" location="C:\Users\hy822\.ivy2\cache\com.codacy\codacy-api-scala_2.12\jars\codacy-api-scala_2.12-3.0.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/codacy/codacy-api-scala_2.12/3.0.2/codacy-api-scala_2.12-3.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-net_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130102836" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="40">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2149" time="26" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-net_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-net_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-net_2.12/2.0.0-M8/rapture-net_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.codacy" name="codacy-api-scala_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="3.0.2"/>
+				<artifacts>
+					<artifact name="rapture-net_2.12" type="jar" ext="jar" status="successful" details="" size="219242" time="749" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-net_2.12\jars\rapture-net_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-net_2.12/2.0.0-M8/rapture-net_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-net" name="commons-net">
+			<revision name="2.0" status="release" pubdate="20081030212915" resolver="public" artresolver="public" homepage="http://commons.apache.org/net/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="45">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7722" time="26" location="C:\Users\hy822\.ivy2\cache\commons-net\commons-net\ivy-2.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\commons-net\commons-net\ivy-2.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-net/commons-net/2.0/commons-net-2.0.pom"/>
+				<caller organisation="com.propensive" name="rapture-net_2.12" conf="compile, runtime" rev="2.0" rev-constraint-default="2.0" rev-constraint-dynamic="2.0" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="commons-net" type="jar" ext="jar" status="successful" details="" size="197067" time="589" location="C:\Users\hy822\.ivy2\cache\commons-net\commons-net\jars\commons-net-2.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-net/commons-net/2.0/commons-net-2.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-io_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130102405" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="41">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2346" time="28" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-io_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-io_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-io_2.12/2.0.0-M8/rapture-io_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-net_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-io_2.12" type="jar" ext="jar" status="successful" details="" size="359373" time="879" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-io_2.12\jars\rapture-io_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-io_2.12/2.0.0-M8/rapture-io_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-uri_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130101937" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="44">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1981" time="24" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-uri_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-uri_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-uri_2.12/2.0.0-M8/rapture-uri_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-io_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-uri_2.12" type="jar" ext="jar" status="successful" details="" size="70945" time="494" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-uri_2.12\jars\rapture-uri_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-uri_2.12/2.0.0-M8/rapture-uri_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-mime_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130101722" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="43">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1800" time="23" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-mime_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-mime_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-mime_2.12/2.0.0-M8/rapture-mime_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-io_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-mime_2.12" type="jar" ext="jar" status="successful" details="" size="155728" time="738" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-mime_2.12\jars\rapture-mime_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-mime_2.12/2.0.0-M8/rapture-mime_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-codec_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130102041" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="42">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1987" time="31" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-codec_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-codec_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-codec_2.12/2.0.0-M8/rapture-codec_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-io_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-codec_2.12" type="jar" ext="jar" status="successful" details="" size="50510" time="471" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-codec_2.12\jars\rapture-codec_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-codec_2.12/2.0.0-M8/rapture-codec_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-json_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130102317" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="34">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1984" time="33" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-json_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-json_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-json_2.12/2.0.0-M8/rapture-json_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-json-circe_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<caller organisation="com.codacy" name="codacy-api-scala_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="3.0.2"/>
+				<artifacts>
+					<artifact name="rapture-json_2.12" type="jar" ext="jar" status="successful" details="" size="144257" time="542" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-json_2.12\jars\rapture-json_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-json_2.12/2.0.0-M8/rapture-json_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-data_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130102023" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="37">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1984" time="24" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-data_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-data_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-data_2.12/2.0.0-M8/rapture-data_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-json_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-data_2.12" type="jar" ext="jar" status="successful" details="" size="193526" time="611" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-data_2.12\jars\rapture-data_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-data_2.12/2.0.0-M8/rapture-data_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-core_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130101747" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="38">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1984" time="28" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-core_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-core_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-core_2.12/2.0.0-M8/rapture-core_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-uri_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-data_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-codec_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-core_2.12" type="jar" ext="jar" status="successful" details="" size="389783" time="1117" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-core_2.12\jars\rapture-core_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-core_2.12/2.0.0-M8/rapture-core_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.propensive" name="rapture-base_2.12">
+			<revision name="2.0.0-M8" status="release" pubdate="20170130101709" resolver="public" artresolver="public" homepage="http://rapture.io/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="39">
+				<license name="Apache-2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="1800" time="23" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-base_2.12\ivy-2.0.0-M8.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-base_2.12\ivy-2.0.0-M8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/propensive/rapture-base_2.12/2.0.0-M8/rapture-base_2.12-2.0.0-M8.pom"/>
+				<caller organisation="com.propensive" name="rapture-core_2.12" conf="compile, runtime" rev="2.0.0-M8" rev-constraint-default="2.0.0-M8" rev-constraint-dynamic="2.0.0-M8" callerrev="2.0.0-M8"/>
+				<artifacts>
+					<artifact name="rapture-base_2.12" type="jar" ext="jar" status="successful" details="" size="6572" time="284" location="C:\Users\hy822\.ivy2\cache\com.propensive\rapture-base_2.12\jars\rapture-base_2.12-2.0.0-M8.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/propensive/rapture-base_2.12/2.0.0-M8/rapture-base_2.12-2.0.0-M8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.jgit" name="org.eclipse.jgit">
+			<revision name="3.6.2.201501210735-r" status="release" pubdate="20150121154440" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="27">
+				<license name="Eclipse Distribution License (New BSD License)"/>
+				<metadata-artifact status="successful" details="" size="6213" time="25" location="C:\Users\hy822\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit\ivy-3.6.2.201501210735-r.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit\ivy-3.6.2.201501210735-r.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r.pom"/>
+				<caller organisation="com.codacy" name="codacy-api-scala_2.12" conf="compile, runtime" rev="3.6.2.201501210735-r" rev-constraint-default="3.6.2.201501210735-r" rev-constraint-dynamic="3.6.2.201501210735-r" callerrev="3.0.2"/>
+				<artifacts>
+					<artifact name="org.eclipse.jgit" type="jar" ext="jar" status="successful" details="" size="1959346" time="2106" location="C:\Users\hy822\.ivy2\cache\org.eclipse.jgit\org.eclipse.jgit\jars\org.eclipse.jgit-3.6.2.201501210735-r.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/jgit/org.eclipse.jgit/3.6.2.201501210735-r/org.eclipse.jgit-3.6.2.201501210735-r.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpclient">
+			<revision name="4.1.3" status="release" pubdate="20120202131519" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-client" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="30">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="5990" time="32" location="C:\Users\hy822\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.1.3.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.httpcomponents\httpclient\ivy-4.1.3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="4.1.3" rev-constraint-default="4.1.3" rev-constraint-dynamic="4.1.3" callerrev="3.6.2.201501210735-r"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="successful" details="" size="352585" time="1068" location="C:\Users\hy822\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.1.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.1.3/httpclient-4.1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-codec" name="commons-codec">
+			<revision name="1.4" status="release" pubdate="20090809232217" resolver="public" artresolver="public" homepage="http://commons.apache.org/codec/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="33">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="10494" time="33" location="C:\Users\hy822\.ivy2\cache\commons-codec\commons-codec\ivy-1.4.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\commons-codec\commons-codec\ivy-1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="58160" time="436" location="C:\Users\hy822\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.4/commons-codec-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="commons-logging" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20071126212410" resolver="public" artresolver="public" homepage="http://commons.apache.org/logging" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="32">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="18365" time="30" location="C:\Users\hy822\.ivy2\cache\commons-logging\commons-logging\ivy-1.1.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\commons-logging\commons-logging\ivy-1.1.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="successful" details="" size="60686" time="382" location="C:\Users\hy822\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.httpcomponents" name="httpcore">
+			<revision name="4.1.4" status="release" pubdate="20111218173741" resolver="public" artresolver="public" homepage="http://hc.apache.org/httpcomponents-core-ga" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="31">
+				<license name="Apache License" url="LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="7390" time="24" location="C:\Users\hy822\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.1.4.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.httpcomponents\httpcore\ivy-4.1.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.pom"/>
+				<caller organisation="org.apache.httpcomponents" name="httpclient" conf="compile, runtime" rev="4.1.4" rev-constraint-default="4.1.4" rev-constraint-dynamic="4.1.4" callerrev="4.1.3"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="successful" details="" size="181410" time="471" location="C:\Users\hy822\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/httpcomponents/httpcore/4.1.4/httpcore-4.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.googlecode.javaewah" name="JavaEWAH">
+			<revision name="0.7.9" status="release" pubdate="20131112153343" resolver="public" artresolver="public" homepage="http://code.google.com/p/javaewah/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="29">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4344" time="25" location="C:\Users\hy822\.ivy2\cache\com.googlecode.javaewah\JavaEWAH\ivy-0.7.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.googlecode.javaewah\JavaEWAH\ivy-0.7.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="0.7.9" rev-constraint-default="0.7.9" rev-constraint-dynamic="0.7.9" callerrev="3.6.2.201501210735-r"/>
+				<artifacts>
+					<artifact name="JavaEWAH" type="bundle" ext="jar" status="successful" details="" size="125146" time="593" location="C:\Users\hy822\.ivy2\cache\com.googlecode.javaewah\JavaEWAH\bundles\JavaEWAH-0.7.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/googlecode/javaewah/JavaEWAH/0.7.9/JavaEWAH-0.7.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.50" status="release" pubdate="20130509102222" resolver="public" artresolver="public" homepage="http://www.jcraft.com/jsch/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="28">
+				<license name="Revised BSD" url="http://www.jcraft.com/jsch/LICENSE.txt"/>
+				<metadata-artifact status="successful" details="" size="3235" time="30" location="C:\Users\hy822\.ivy2\cache\com.jcraft\jsch\ivy-0.1.50.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\com.jcraft\jsch\ivy-0.1.50.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.pom"/>
+				<caller organisation="org.eclipse.jgit" name="org.eclipse.jgit" conf="compile, runtime" rev="0.1.50" rev-constraint-default="0.1.50" rev-constraint-dynamic="0.1.50" callerrev="3.6.2.201501210735-r"/>
+				<artifacts>
+					<artifact name="jsch" type="jar" ext="jar" status="successful" details="" size="254408" time="812" location="C:\Users\hy822\.ivy2\cache\com.jcraft\jsch\jars\jsch-0.1.50.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/jcraft/jsch/0.1.50/jsch-0.1.50.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="joda-time" name="joda-time">
+			<revision name="2.7" status="release" pubdate="20150112015125" resolver="public" artresolver="public" homepage="http://www.joda.org/joda-time/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="26">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="28594" time="37" location="C:\Users\hy822\.ivy2\cache\joda-time\joda-time\ivy-2.7.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\joda-time\joda-time\ivy-2.7.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.pom"/>
+				<caller organisation="com.codacy" name="codacy-api-scala_2.12" conf="compile, runtime" rev="2.7" rev-constraint-default="2.7" rev-constraint-dynamic="2.7" callerrev="3.0.2"/>
+				<artifacts>
+					<artifact name="joda-time" type="jar" ext="jar" status="successful" details="" size="589289" time="1226" location="C:\Users\hy822\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.7.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.7/joda-time-2.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scoverage" name="sbt-scoverage">
+			<revision name="1.5.1" status="release" pubdate="20170826224612" resolver="public" artresolver="public" homepage="https://github.com/scoverage/sbt-scoverage" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="22">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1968" time="56" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\org.scoverage\sbt-scoverage\ivy-1.5.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\org.scoverage\sbt-scoverage\ivy-1.5.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.5.1/sbt-scoverage-1.5.1.pom"/>
+				<caller organisation="default" name="scala-spark-graphx-bitcointransaction-build" conf="compile, runtime-internal, runtime, optional" rev="1.5.1" rev-constraint-default="1.5.1" rev-constraint-dynamic="1.5.1" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-scoverage" type="jar" ext="jar" status="successful" details="" size="24320" time="280" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\org.scoverage\sbt-scoverage\jars\sbt-scoverage-1.5.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scoverage/sbt-scoverage_2.12_1.0/1.5.1/sbt-scoverage-1.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scoverage" name="scalac-scoverage-plugin_2.12">
+			<revision name="1.3.1" status="release" pubdate="20170825214123" resolver="public" artresolver="public" homepage="https://github.com/scoverage/scalac-scoverage-plugin" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="23">
+				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2762" time="33" location="C:\Users\hy822\.ivy2\cache\org.scoverage\scalac-scoverage-plugin_2.12\ivy-1.3.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.scoverage\scalac-scoverage-plugin_2.12\ivy-1.3.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-plugin_2.12/1.3.1/scalac-scoverage-plugin_2.12-1.3.1.pom"/>
+				<caller organisation="org.scoverage" name="sbt-scoverage" conf="default, compile, runtime, master" rev="1.3.1" rev-constraint-default="1.3.1" rev-constraint-dynamic="1.3.1" callerrev="1.5.1"/>
+				<artifacts>
+					<artifact name="scalac-scoverage-plugin_2.12" type="jar" ext="jar" status="successful" details="" size="173785" time="343" location="C:\Users\hy822\.ivy2\cache\org.scoverage\scalac-scoverage-plugin_2.12\jars\scalac-scoverage-plugin_2.12-1.3.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scoverage/scalac-scoverage-plugin_2.12/1.3.1/scalac-scoverage-plugin_2.12-1.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.12.4" status="release" pubdate="20171011092224" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="3">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2670" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.12.4/scala-reflect-2.12.4.pom"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.6.1"/>
+				<caller organisation="com.propensive" name="rapture-io_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.12.4"/>
+				<caller organisation="com.propensive" name="rapture-net_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-json_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-core_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-mime_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-uri_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-json-circe_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-data_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-codec_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-base_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="default, compile, runtime, master" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.1"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="3587892" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.12.4.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.12.4" status="release" pubdate="20171011090456" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.12.4/" downloaded="false" searched="false" default="false" conf="master(*), compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2501" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang\scala-library\ivy-2.12.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.12.4/scala-library-2.12.4.pom"/>
+				<caller organisation="org.typelevel" name="machinist_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.6.1"/>
+				<caller organisation="io.circe" name="circe-jawn_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.7.0"/>
+				<caller organisation="org.scala-lang" name="scala-compiler" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.12.4"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.0.6"/>
+				<caller organisation="org.scoverage" name="scalac-scoverage-plugin_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.3.1"/>
+				<caller organisation="io.circe" name="circe-numbers_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.7.0"/>
+				<caller organisation="com.propensive" name="rapture-core_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.scala-lang.modules" name="scala-xml_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.0.5"/>
+				<caller organisation="com.propensive" name="rapture-mime_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.spire-math" name="jawn-parser_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.10.4"/>
+				<caller organisation="com.propensive" name="rapture-uri_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-json-circe_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-codec_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.scalactic" name="scalactic_2.12" conf="default, compile, runtime, master" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.1"/>
+				<caller organisation="com.github.mpilquist" name="simulacrum_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.10.0"/>
+				<caller organisation="io.circe" name="circe-core_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.7.0"/>
+				<caller organisation="com.codacy" name="coverage-parser_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.2"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.12.4"/>
+				<caller organisation="com.propensive" name="rapture-io_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.codacy" name="codacy-api-scala_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="3.0.2"/>
+				<caller organisation="com.jsuereth" name="scala-arm_2.12" conf="default, compile, runtime, master" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0"/>
+				<caller organisation="com.propensive" name="rapture-net_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.typelevel" name="cats-kernel_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.9.0"/>
+				<caller organisation="com.propensive" name="rapture-json_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="com.propensive" name="rapture-data_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.typelevel" name="cats-core_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.9.0"/>
+				<caller organisation="org.typelevel" name="macro-compat_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="1.1.1"/>
+				<caller organisation="com.propensive" name="rapture-base_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="2.0.0-M8"/>
+				<caller organisation="org.typelevel" name="cats-macros_2.12" conf="compile, runtime" rev="2.12.4" rev-constraint-default="2.12.4" rev-constraint-dynamic="2.12.4" callerrev="0.9.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5247152" time="0" location="C:\Users\hy822\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.12.4.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.eed3si9n" name="sbt-assembly">
+			<revision name="0.14.6" status="release" pubdate="20171114125801" resolver="sbt-plugin-releases" artresolver="sbt-plugin-releases" extra-scalaVersion="2.12" extra-sbtVersion="1.0" downloaded="true" searched="true" default="false" conf="compile, default(compile)" position="0">
+				<license name="MIT License" url="https://github.com/sbt/sbt-assembly/blob/master/LICENSE"/>
+				<metadata-artifact status="successful" details="" size="1761" time="593" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.eed3si9n\sbt-assembly\ivy-0.14.6.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.eed3si9n\sbt-assembly\ivy-0.14.6.xml.original" origin-is-local="false" origin-location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.14.6/ivys/ivy.xml"/>
+				<caller organisation="default" name="scala-spark-graphx-bitcointransaction-build" conf="compile, runtime-internal, runtime, optional" rev="0.14.6" rev-constraint-default="0.14.6" rev-constraint-dynamic="0.14.6" callerrev="0.1.0-SNAPSHOT" extra-scalaVersion="2.12" extra-sbtVersion="1.0"/>
+				<artifacts>
+					<artifact name="sbt-assembly" type="jar" ext="jar" status="successful" details="" size="123307" time="1438" location="C:\Users\hy822\.ivy2\cache\scala_2.12\sbt_1.0\com.eed3si9n\sbt-assembly\jars\sbt-assembly-0.14.6.jar">
+						<origin-location is-local="false" location="https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.eed3si9n/sbt-assembly/scala_2.12/sbt_1.0/0.14.6/jars/sbt-assembly.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.pantsbuild" name="jarjar">
+			<revision name="1.6.5" status="release" pubdate="20171109185017" resolver="public" artresolver="public" homepage="https://github.com/pantsbuild/jarjar" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2173" time="27" location="C:\Users\hy822\.ivy2\cache\org.pantsbuild\jarjar\ivy-1.6.5.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.pantsbuild\jarjar\ivy-1.6.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/pantsbuild/jarjar/1.6.5/jarjar-1.6.5.pom"/>
+				<caller organisation="com.eed3si9n" name="sbt-assembly" conf="compile" rev="1.6.5" rev-constraint-default="1.6.5" rev-constraint-dynamic="1.6.5" callerrev="0.14.6"/>
+				<artifacts>
+					<artifact name="jarjar" type="jar" ext="jar" status="successful" details="" size="117218" time="304" location="C:\Users\hy822\.ivy2\cache\org.pantsbuild\jarjar\jars\jarjar-1.6.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/pantsbuild/jarjar/1.6.5/jarjar-1.6.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-plugin-api">
+			<revision name="3.3.9" status="release" pubdate="20151110173938" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="10">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2689" time="47" location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-plugin-api\ivy-3.3.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-plugin-api\ivy-3.3.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="3.3.9" rev-constraint-default="3.3.9" rev-constraint-dynamic="3.3.9" callerrev="1.6.5"/>
+				<artifacts>
+					<artifact name="maven-plugin-api" type="jar" ext="jar" status="successful" details="" size="47473" time="370" location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-plugin-api\jars\maven-plugin-api-3.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-plugin-api/3.3.9/maven-plugin-api-3.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus">
+			<revision name="0.3.2" status="release" pubdate="20150914014525" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="15">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="4170" time="32" location="C:\Users\hy822\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.plexus\ivy-0.3.2.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.plexus\ivy-0.3.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="0.3.2" rev-constraint-default="0.3.2" rev-constraint-dynamic="0.3.2" callerrev="3.3.9"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.plexus" type="eclipse-plugin" ext="jar" status="successful" details="" size="205421" time="756" location="C:\Users\hy822\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.plexus\eclipse-plugins\org.eclipse.sisu.plexus-0.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.plexus/0.3.2/org.eclipse.sisu.plexus-0.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-classworlds">
+			<revision name="2.5.2" status="release" pubdate="20140829190823" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="21">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="7305" time="28" location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-classworlds\ivy-2.5.2.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-classworlds\ivy-2.5.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="2.5.2" rev-constraint-default="2.5.2" rev-constraint-dynamic="2.5.2" callerrev="0.3.2"/>
+				<artifacts>
+					<artifact name="plexus-classworlds" type="bundle" ext="jar" status="successful" details="" size="52684" time="417" location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-classworlds\bundles\plexus-classworlds-2.5.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-classworlds/2.5.2/plexus-classworlds-2.5.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-component-annotations">
+			<revision name="1.5.5" status="release" pubdate="20100930221459" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="815" time="29" location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-component-annotations\ivy-1.5.5.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-component-annotations\ivy-1.5.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.5.5" rev-constraint-default="1.5.5" rev-constraint-dynamic="1.5.5" callerrev="0.3.2"/>
+				<artifacts>
+					<artifact name="plexus-component-annotations" type="jar" ext="jar" status="successful" details="" size="4211" time="189" location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-component-annotations\jars\plexus-component-annotations-1.5.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.eclipse.sisu" name="org.eclipse.sisu.inject">
+			<revision name="0.3.2" status="release" pubdate="20150914014108" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Eclipse Public License, Version 1.0" url="http://www.eclipse.org/legal/epl-v10.html"/>
+				<metadata-artifact status="successful" details="" size="2625" time="33" location="C:\Users\hy822\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.inject\ivy-0.3.2.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.inject\ivy-0.3.2.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="0.3.2" rev-constraint-default="0.3.2" rev-constraint-dynamic="0.3.2" callerrev="0.3.2"/>
+				<artifacts>
+					<artifact name="org.eclipse.sisu.inject" type="eclipse-plugin" ext="jar" status="successful" details="" size="377642" time="935" location="C:\Users\hy822\.ivy2\cache\org.eclipse.sisu\org.eclipse.sisu.inject\eclipse-plugins\org.eclipse.sisu.inject-0.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/eclipse/sisu/org.eclipse.sisu.inject/0.3.2/org.eclipse.sisu.inject-0.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.enterprise" name="cdi-api">
+			<revision name="1.0" status="release" pubdate="20091108234421" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="1434" time="26" location="C:\Users\hy822\.ivy2\cache\javax.enterprise\cdi-api\ivy-1.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\javax.enterprise\cdi-api\ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.pom"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="0.3.2"/>
+				<artifacts>
+					<artifact name="cdi-api" type="jar" ext="jar" status="successful" details="" size="44908" time="445" location="C:\Users\hy822\.ivy2\cache\javax.enterprise\cdi-api\jars\cdi-api-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/enterprise/cdi-api/1.0/cdi-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.inject" name="javax.inject">
+			<revision name="1" status="release" pubdate="20091014013500" resolver="public" artresolver="public" homepage="http://code.google.com/p/atinject/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="612" time="31" location="C:\Users\hy822\.ivy2\cache\javax.inject\javax.inject\ivy-1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\javax.inject\javax.inject\ivy-1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1" rev-constraint-default="1" rev-constraint-dynamic="1" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="javax.inject" type="jar" ext="jar" status="successful" details="" size="2497" time="331" location="C:\Users\hy822\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="javax.annotation" name="jsr250-api">
+			<revision name="1.0" status="release" pubdate="20070515222559" resolver="public" artresolver="public" homepage="http://jcp.org/aboutJava/communityprocess/final/jsr250/index.html" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="17">
+				<license name="COMMON DEVELOPMENT AND DISTRIBUTION LICENSE (CDDL) Version 1.0" url="https://glassfish.dev.java.net/public/CDDLv1.0.html"/>
+				<metadata-artifact status="successful" details="" size="1023" time="33" location="C:\Users\hy822\.ivy2\cache\javax.annotation\jsr250-api\ivy-1.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\javax.annotation\jsr250-api\ivy-1.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.pom"/>
+				<caller organisation="javax.enterprise" name="cdi-api" conf="compile, runtime" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="jsr250-api" type="jar" ext="jar" status="successful" details="" size="5848" time="267" location="C:\Users\hy822\.ivy2\cache\javax.annotation\jsr250-api\jars\jsr250-api-1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-artifact">
+			<revision name="3.3.9" status="release" pubdate="20151110173925" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2134" time="25" location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-artifact\ivy-3.3.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-artifact\ivy-3.3.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.9" rev-constraint-default="3.3.9" rev-constraint-dynamic="3.3.9" callerrev="3.3.9"/>
+				<artifacts>
+					<artifact name="maven-artifact" type="jar" ext="jar" status="successful" details="" size="55018" time="436" location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-artifact\jars\maven-artifact-3.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-artifact/3.3.9/maven-artifact-3.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.maven" name="maven-model">
+			<revision name="3.3.9" status="release" pubdate="20151110173906" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="4033" time="26" location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-model\ivy-3.3.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-model\ivy-3.3.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.pom"/>
+				<caller organisation="org.apache.maven" name="maven-plugin-api" conf="compile, runtime" rev="3.3.9" rev-constraint-default="3.3.9" rev-constraint-dynamic="3.3.9" callerrev="3.3.9"/>
+				<artifacts>
+					<artifact name="maven-model" type="jar" ext="jar" status="successful" details="" size="163977" time="596" location="C:\Users\hy822\.ivy2\cache\org.apache.maven\maven-model\jars\maven-model-3.3.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/maven/maven-model/3.3.9/maven-model-3.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.commons" name="commons-lang3">
+			<revision name="3.4" status="release" pubdate="20150403143112" resolver="public" artresolver="public" homepage="http://commons.apache.org/proper/commons-lang/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="13">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="22183" time="40" location="C:\Users\hy822\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.4.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.commons\commons-lang3\ivy-3.4.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.pom"/>
+				<caller organisation="org.apache.maven" name="maven-model" conf="compile, runtime" rev="3.4" rev-constraint-default="3.4" rev-constraint-dynamic="3.4" callerrev="3.3.9"/>
+				<caller organisation="org.apache.maven" name="maven-artifact" conf="compile, runtime" rev="3.4" rev-constraint-default="3.4" rev-constraint-dynamic="3.4" callerrev="3.3.9"/>
+				<artifacts>
+					<artifact name="commons-lang3" type="jar" ext="jar" status="successful" details="" size="434678" time="833" location="C:\Users\hy822\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus.plexus" name="plexus-utils">
+			<revision name="3.0.22" status="release" pubdate="20150407181026" resolver="public" artresolver="public" homepage="http://plexus.codehaus.org/plexus-utils" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="3831" time="32" location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-utils\ivy-3.0.22.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-utils\ivy-3.0.22.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.pom"/>
+				<caller organisation="org.apache.maven" name="maven-model" conf="compile, runtime" rev="3.0.22" rev-constraint-default="3.0.22" rev-constraint-dynamic="3.0.22" callerrev="3.3.9"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.2"/>
+				<caller organisation="org.apache.maven" name="maven-artifact" conf="compile, runtime" rev="3.0.22" rev-constraint-default="3.0.22" rev-constraint-dynamic="3.0.22" callerrev="3.3.9"/>
+				<artifacts>
+					<artifact name="plexus-utils" type="jar" ext="jar" status="successful" details="" size="244897" time="829" location="C:\Users\hy822\.ivy2\cache\org.codehaus.plexus\plexus-utils\jars\plexus-utils-3.0.22.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/plexus/plexus-utils/3.0.22/plexus-utils-3.0.22.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="3.0.17" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="3.0.22"/>
+				<caller organisation="org.eclipse.sisu" name="org.eclipse.sisu.plexus" conf="compile, runtime" rev="3.0.17" rev-constraint-default="3.0.17" rev-constraint-dynamic="3.0.17" callerrev="0.3.2"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-commons">
+			<revision name="6.0" status="release" pubdate="20170923085013" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="8">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="2092" time="31" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-commons\ivy-6.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-commons\ivy-6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="6.0" rev-constraint-default="6.0" rev-constraint-dynamic="6.0" callerrev="1.6.5"/>
+				<artifacts>
+					<artifact name="asm-commons" type="jar" ext="jar" status="successful" details="" size="77401" time="325" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-commons\jars\asm-commons-6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-commons/6.0/asm-commons-6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm-tree">
+			<revision name="6.0" status="release" pubdate="20170923085031" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="9">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="2081" time="30" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-tree\ivy-6.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-tree\ivy-6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.pom"/>
+				<caller organisation="org.ow2.asm" name="asm-commons" conf="compile, runtime" rev="6.0" rev-constraint-default="6.0" rev-constraint-dynamic="6.0" callerrev="6.0"/>
+				<artifacts>
+					<artifact name="asm-tree" type="jar" ext="jar" status="successful" details="" size="48143" time="388" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm-tree\jars\asm-tree-6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm-tree/6.0/asm-tree-6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.ow2.asm" name="asm">
+			<revision name="6.0" status="release" pubdate="20170923084623" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="BSD" url="http://asm.objectweb.org/license.html"/>
+				<metadata-artifact status="successful" details="" size="1933" time="48" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm\ivy-6.0.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm\ivy-6.0.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.pom"/>
+				<caller organisation="org.ow2.asm" name="asm-tree" conf="compile, runtime" rev="6.0" rev-constraint-default="6.0" rev-constraint-dynamic="6.0" callerrev="6.0"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="6.0" rev-constraint-default="6.0" rev-constraint-dynamic="6.0" callerrev="1.6.5"/>
+				<artifacts>
+					<artifact name="asm" type="jar" ext="jar" status="successful" details="" size="95209" time="116" location="C:\Users\hy822\.ivy2\cache\org.ow2.asm\asm\jars\asm-6.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/ow2/asm/asm/6.0/asm-6.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant">
+			<revision name="1.9.9" status="release" pubdate="20170202194004" resolver="public" artresolver="public" homepage="http://ant.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="5">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="9625" time="49" location="C:\Users\hy822\.ivy2\cache\org.apache.ant\ant\ivy-1.9.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.ant\ant\ivy-1.9.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.9/ant-1.9.9.pom"/>
+				<caller organisation="org.pantsbuild" name="jarjar" conf="default, compile, runtime, master" rev="1.9.9" rev-constraint-default="1.9.9" rev-constraint-dynamic="1.9.9" callerrev="1.6.5"/>
+				<artifacts>
+					<artifact name="ant" type="jar" ext="jar" status="successful" details="" size="2047763" time="2161" location="C:\Users\hy822\.ivy2\cache\org.apache.ant\ant\jars\ant-1.9.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant/1.9.9/ant-1.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.ant" name="ant-launcher">
+			<revision name="1.9.9" status="release" pubdate="20170202194411" resolver="public" artresolver="public" homepage="http://ant.apache.org/" downloaded="true" searched="true" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="6">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="successful" details="" size="2335" time="27" location="C:\Users\hy822\.ivy2\cache\org.apache.ant\ant-launcher\ivy-1.9.9.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.apache.ant\ant-launcher\ivy-1.9.9.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.9/ant-launcher-1.9.9.pom"/>
+				<caller organisation="org.apache.ant" name="ant" conf="compile, runtime" rev="1.9.9" rev-constraint-default="1.9.9" rev-constraint-dynamic="1.9.9" callerrev="1.9.9"/>
+				<artifacts>
+					<artifact name="ant-launcher" type="jar" ext="jar" status="successful" details="" size="18394" time="295" location="C:\Users\hy822\.ivy2\cache\org.apache.ant\ant-launcher\jars\ant-launcher-1.9.9.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/ant/ant-launcher/1.9.9/ant-launcher-1.9.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scalactic" name="scalactic_2.12">
+			<revision name="3.0.1" status="release" pubdate="20161110065016" resolver="public" artresolver="public" homepage="http://www.scalatest.org" downloaded="true" searched="true" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="the Apache License, ASL Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="successful" details="" size="2236" time="65" location="C:\Users\hy822\.ivy2\cache\org.scalactic\scalactic_2.12\ivy-3.0.1.xml" searched="true" original-local-location="C:\Users\hy822\.ivy2\cache\org.scalactic\scalactic_2.12\ivy-3.0.1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.pom"/>
+				<caller organisation="com.eed3si9n" name="sbt-assembly" conf="compile" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="0.14.6"/>
+				<artifacts>
+					<artifact name="scalactic_2.12" type="bundle" ext="jar" status="successful" details="" size="705564" time="1473" location="C:\Users\hy822\.ivy2\cache\org.scalactic\scalactic_2.12\bundles\scalactic_2.12-3.0.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scalactic/scalactic_2.12/3.0.1/scalactic_2.12-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

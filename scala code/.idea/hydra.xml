@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="HydraSettings">
+    <option name="hydraStorePath" value="D:\Master_Study\LSDE\assignment2\lsde11\hadoopcryptoledger-master\examples\scala-spark-graphx-bitcointransaction\.hydra\idea" />
+    <option name="noOfCores" value="6" />
+    <option name="projectRoot" value="D:\Master_Study\LSDE\assignment2\lsde11\hadoopcryptoledger-master\examples\scala-spark-graphx-bitcointransaction" />
+    <option name="sourcePartitioner" value="auto" />
+  </component>
+</project>

@@ -1,0 +1,1 @@
+[error] sbt.librarymanagement.ResolveException: unresolved dependency: org.apache.spark#spark-core_2.12;1.5.0: not found

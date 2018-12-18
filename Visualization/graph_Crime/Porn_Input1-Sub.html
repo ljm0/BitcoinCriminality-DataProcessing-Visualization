@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <script src="echarts.min.js"></script>
+    <!-- <script src="echarts.js"></script> -->
+    <!-- <script src="jquery-3.3.1.js"></script> -->
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script> -->
+    <style type="text/css">
+        html,
+        body,
+        #main {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+
+<body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+    <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        var linedata = [[{ "name": "1vAY8KJhNdQRgUN9svHrsdknV6g1UYokW", "symbolSize": 1.7320508075688772, "draggable": "False", "value": 5328, "category": "1" }, { "name": "12SN1phXKQ1VfctkVn4sMLgoj7foDV7aKn", "symbolSize": 2.0, "draggable": "False", "value": 0, "category": "2" }, { "name": "3CZ5iuU3ikeDgVoRNUW8aTUtLwRBB3mdSj", "symbolSize": 1.7320508075688772, "draggable": "False", "value": 32343000, "category": "2" }, { "name": "15LKRRYM2k2CCSGT76rNbQmciLZJSxKXAx", "symbolSize": 40, "draggable": "False", "value": 0, "category": "0", "label": { "normal": { "show": "True" } } }, { "name": "1GT59G9NweugnWWR7mbjHid39a4VKdPNxP", "symbolSize": 2.0, "draggable": "False", "value": 1821902, "category": "3" }, { "name": "1ErbBcX9KfeNHurjViezWEoPUC7y2JS9cm", "symbolSize": 1.7320508075688772, "draggable": "False", "value": 4789503, "category": "1" }, { "name": "18aVwkFAadCvwGBHN8vagouWBWrNEpZAaV", "symbolSize": 1.7320508075688772, "draggable": "False", "value": 0, "category": "2" }, { "name": "1E2J2DAFGToqmTxK5H8fG6V3Tp3xqSiAm4", "symbolSize": 2.0, "draggable": "False", "value": 65483424, "category": "1" }, { "name": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6", "symbolSize": 2.23606797749979, "draggable": "False", "value": 1911252, "category": "2" }], [{ "source": "12SN1phXKQ1VfctkVn4sMLgoj7foDV7aKn", "target": "3CZ5iuU3ikeDgVoRNUW8aTUtLwRBB3mdSj", "value": "10781000" }, { "source": "12SN1phXKQ1VfctkVn4sMLgoj7foDV7aKn", "target": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6", "value": "637084" }, { "source": "12SN1phXKQ1VfctkVn4sMLgoj7foDV7aKn", "target": "1GT59G9NweugnWWR7mbjHid39a4VKdPNxP", "value": "910951" }, { "source": "12SN1phXKQ1VfctkVn4sMLgoj7foDV7aKn", "target": "1E2J2DAFGToqmTxK5H8fG6V3Tp3xqSiAm4", "value": "30984000" }, { "source": "15LKRRYM2k2CCSGT76rNbQmciLZJSxKXAx", "target": "1vAY8KJhNdQRgUN9svHrsdknV6g1UYokW", "value": "1776" }, { "source": "15LKRRYM2k2CCSGT76rNbQmciLZJSxKXAx", "target": "1E2J2DAFGToqmTxK5H8fG6V3Tp3xqSiAm4", "value": "1757712" }, { "source": "15LKRRYM2k2CCSGT76rNbQmciLZJSxKXAx", "target": "1ErbBcX9KfeNHurjViezWEoPUC7y2JS9cm", "value": "4789503" }, { "source": "1GT59G9NweugnWWR7mbjHid39a4VKdPNxP", "target": "3CZ5iuU3ikeDgVoRNUW8aTUtLwRBB3mdSj", "value": "10781000" }, { "source": "1GT59G9NweugnWWR7mbjHid39a4VKdPNxP", "target": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6", "value": "637084" }, { "source": "1ErbBcX9KfeNHurjViezWEoPUC7y2JS9cm", "target": "3CZ5iuU3ikeDgVoRNUW8aTUtLwRBB3mdSj", "value": "10781000" }, { "source": "1ErbBcX9KfeNHurjViezWEoPUC7y2JS9cm", "target": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6", "value": "637084" }, { "source": "18aVwkFAadCvwGBHN8vagouWBWrNEpZAaV", "target": "1GT59G9NweugnWWR7mbjHid39a4VKdPNxP", "value": "910951" }, { "source": "18aVwkFAadCvwGBHN8vagouWBWrNEpZAaV", "target": "1vAY8KJhNdQRgUN9svHrsdknV6g1UYokW", "value": "1776" }, { "source": "18aVwkFAadCvwGBHN8vagouWBWrNEpZAaV", "target": "1E2J2DAFGToqmTxK5H8fG6V3Tp3xqSiAm4", "value": "30984000" }, { "source": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6", "target": "1vAY8KJhNdQRgUN9svHrsdknV6g1UYokW", "value": "1776" }, { "source": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6", "target": "1E2J2DAFGToqmTxK5H8fG6V3Tp3xqSiAm4", "value": "1757712" }], [{ "name": "-1" }, { "name": "0" }, { "name": "1" }, { "name": "2" }, { "name": "3" }, { "name": "4" }, { "name": "5" }, { "name": "1vAY8KJhNdQRgUN9svHrsdknV6g1UYokW" }, { "name": "12SN1phXKQ1VfctkVn4sMLgoj7foDV7aKn" }, { "name": "3CZ5iuU3ikeDgVoRNUW8aTUtLwRBB3mdSj" }, { "name": "15LKRRYM2k2CCSGT76rNbQmciLZJSxKXAx" }, { "name": "1GT59G9NweugnWWR7mbjHid39a4VKdPNxP" }, { "name": "1ErbBcX9KfeNHurjViezWEoPUC7y2JS9cm" }, { "name": "18aVwkFAadCvwGBHN8vagouWBWrNEpZAaV" }, { "name": "1E2J2DAFGToqmTxK5H8fG6V3Tp3xqSiAm4" }, { "name": "1KoANX3UFexvn29xvcR9Li3Xt5upxdPhj6" }]]
+        var data = linedata[0]
+        var links = linedata[1]
+        var categories = linedata[2]
+        var cont = linedata[3]
+        var mid = linedata[4]
+        var user1 = linedata[5]
+    // response.setHeader("Access-Control-Allow-Origin", "*");
+    myChart.showLoading();//http://gallery.echartsjs.com/asset/get/s/data-1495595908173-rk2KsOfWb.json
+    // $.getJSON('http://127.0.0.1:8080/demo.json',
+    // function (linedata) {
+    // function (jsondta) {
+option = {
+            title: {
+                text: "Bitcoin Criminality PronInput1 Relationship Sub-Graph",
+                subtext: "Group11",
+                sublink: 'http:' + mid,
+                top: "top",
+                left: "center"
+            },
+
+            tooltip: {},
+
+            toolbox: {
+                show: true,
+                feature: {
+                    dataView: {
+                        show: true,
+                        readOnly: true
+                    },
+                    restore: {
+                        show: true
+                    },
+                    saveAsImage: {
+                        show: true
+                    }
+                }
+            },
+            animationDuration: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series: [{
+                name: 'Bitcoin Criminality',
+                type: 'graph',
+                layout: 'force',
+
+                force: {
+                    //initLayout:'circular'
+                    edgeLength: 50,
+                    repulsion: 50,
+                    gravity: 0.2
+                },
+                data: data,
+                roam: true,
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [2, 5],
+                edgeLabel: {
+                    normal: {
+                        textStyle: {
+                            fontSize: 5
+                        }
+                    }
+                },
+                edgeLabel: {
+                    normal: {
+                        show: false,
+                        formatter: function (x) {
+                            return x.data.value;
+                        }
+                    }
+                },
+                edges: links,
+                categories: categories,
+                focusNodeAdjacency: true,
+                roam: true,
+                label: {
+                    normal: {
+                        position: 'right',
+                        formatter: '{b}'
+                    }
+                },
+                lineStyle: {
+                    normal: {
+                        color: 'target',
+                        curveness: 0
+                    }
+                }
+            }]
+        };
+        // myChart.setOption(option);
+    // });
+    if (option && typeof option === "object") {
+        myChart.hideLoading();
+        myChart.setOption(option, true);
+    }
+    </script>
+</body>
+
+</html>

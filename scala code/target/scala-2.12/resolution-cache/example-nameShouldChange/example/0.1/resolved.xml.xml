@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="example-hcl-spark-scala-graphx-bitcointransaction"
+		module="example-hcl-spark-scala-graphx-bitcointransaction_2.12"
+		revision="0.1"
+		status="integration"
+		publication="20181027192834"
+	>
+		<description>
+		example-hcl-spark-scala-graphx-bitcointransaction
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		<conf name="it" visibility="public" description="" extends="runtime"/>
+		<conf name="compile-internal" visibility="private" description="" extends="compile,optional,provided"/>
+		<conf name="runtime-internal" visibility="private" description="" extends="runtime,optional"/>
+		<conf name="test-internal" visibility="private" description="" extends="test,optional,provided"/>
+		<conf name="it-internal" visibility="private" description="" extends="it,optional,provided"/>
+		<conf name="plugin" visibility="private" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		<conf name="scala-tool" visibility="private" description=""/>
+		<conf name="scoveragePlugin" visibility="private" description=""/>
+	</configurations>
+	<publications>
+		<artifact name="example-hcl-spark-scala-graphx-bitcointransaction_2.12" type="pom" ext="pom" conf="pom"/>
+		<artifact name="example-hcl-spark-scala-graphx-bitcointransaction_2.12" type="jar" ext="jar" conf="compile"/>
+		<artifact name="example-hcl-spark-scala-graphx-bitcointransaction_2.12" type="src" ext="jar" conf="compile" e:classifier="sources"/>
+		<artifact name="example-hcl-spark-scala-graphx-bitcointransaction_2.12" type="doc" ext="jar" conf="compile" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);compile->default(compile)"/>
+		<dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" conf="test->default(compile);it->default(compile)">
+			<artifact name="org.jacoco.agent" type="jar" ext="jar" conf="test" e:classifier="runtime"/>
+		</dependency>
+		<dependency org="com.github.zuinnote" name="hadoopcryptoledger-fileformat" rev="1.2.0" conf="compile->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-core_2.12" rev="2.1.1" conf="provided->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-sql_2.12" rev="2.1.1" conf="provided->default(compile)"/>
+		<dependency org="org.apache.spark" name="spark-graphx_2.12" rev="2.1.1" conf="provided->default(compile)"/>
+		<dependency org="org.apache.hadoop" name="hadoop-client" rev="2.7.0" conf="provided->default(compile)"/>
+		<dependency org="javax.servlet" name="javax.servlet-api" rev="3.0.1" conf="it->default(compile)"/>
+		<dependency org="org.apache.hadoop" name="hadoop-common" rev="2.7.0" conf="it->default(compile)">
+			<artifact name="hadoop-common" type="jar" ext="jar" conf="*" e:classifier="tests"/>
+			<artifact name="hadoop-common" type="jar" ext="jar" conf="*" e:classifier=""/>
+		</dependency>
+		<dependency org="org.apache.hadoop" name="hadoop-hdfs" rev="2.7.0" conf="it->default(compile)">
+			<artifact name="hadoop-hdfs" type="jar" ext="jar" conf="*" e:classifier="tests"/>
+			<artifact name="hadoop-hdfs" type="jar" ext="jar" conf="*" e:classifier=""/>
+		</dependency>
+		<dependency org="org.apache.hadoop" name="hadoop-minicluster" rev="2.7.0" conf="it->default(compile)"/>
+		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.1" conf="test->default(compile);it->default(compile)"/>
+	</dependencies>
+</ivy-module>
