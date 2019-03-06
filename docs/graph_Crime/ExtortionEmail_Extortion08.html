@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+
+<head>
+    <meta charset="utf-8">
+    <script src="echarts.min.js"></script>
+    <!-- <script src="echarts.js"></script> -->
+    <!-- <script src="jquery-3.3.1.js"></script> -->
+    <!-- <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script> -->
+    <style type="text/css">
+        html,
+        body,
+        #main {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+
+<body style="height: 100%; margin: 0">
+    <div id="container" style="height: 100%"></div>
+    <script type="text/javascript">
+        var dom = document.getElementById("container");
+        var myChart = echarts.init(dom);
+        var app = {};
+        option = null;
+        var linedata = [[{ "name": "1Nu6fbbqcLhEm6AQAPKY4T5F1GKuyPbiGR", "symbolSize": 1.0, "draggable": "False", "value": 376518, "category": "2" }, { "name": "14Vzs4Mg7wHSYwRh7K9hr1cXEpmfyC4Rzh", "symbolSize": 1.0, "draggable": "False", "value": 413363, "category": "2" }, { "name": "1PvNqtEHFd2TA3VyX5kv5wdhV98fVNSrHc", "symbolSize": 1.0, "draggable": "False", "value": 2232750, "category": "3" }, { "name": "1HvU758AtcVdKmy9YASNWFnGzeNrnKCnUi", "symbolSize": 1.0, "draggable": "False", "value": 4198020, "category": "3" }, { "name": "1FUqAaz5rv9urLyEyxt5fzm84ozV4VaHJr", "symbolSize": 1.0, "draggable": "False", "value": 480000, "category": "3" }, { "name": "17V7CQr92RCi4VqZbq3vWYvTC9jhnAyVHJ", "symbolSize": 1.0, "draggable": "False", "value": 1000000, "category": "2" }, { "name": "1CYUTwzpxg9hfLjvGEkeze3kacf5y6Uf1V", "symbolSize": 1.0, "draggable": "False", "value": 104250, "category": "2" }, { "name": "3GxnppRupfYbr1vxSycUW9e1vMts8p7xR9", "symbolSize": 1.0, "draggable": "False", "value": 286000, "category": "3" }, { "name": "3PyD5PsJxhHPX955TS5UfhtbndKhHbqzY8", "symbolSize": 1.0, "draggable": "False", "value": 522225, "category": "3" }, { "name": "32KetJ9cWbmJzPmNqv5QwSMtqSMbZexV1P", "symbolSize": 1.0, "draggable": "False", "value": 310560, "category": "3" }, { "name": "1BYNSxuiKVVmWkk33qMzBmw18TKdqWZkdY", "symbolSize": 1.0, "draggable": "False", "value": 480437, "category": "2" }, { "name": "1NLh41sRP8QfSkkBrps1wXQXQhyM86HQYh", "symbolSize": 40, "draggable": "False", "value": 29000000, "category": "0", "label": { "normal": { "show": "True" } } }, { "name": "18LEm4aYV8j4SQMmRqch3GVd8ysZDbyWrZ", "symbolSize": 1.0, "draggable": "False", "value": 9392024, "category": "3" }, { "name": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "symbolSize": 5.196152422706632, "draggable": "False", "value": 0, "category": "2" }, { "name": "1CwQVUqEbRXJaUxTgMHdGMSX2rKepweh23", "symbolSize": 1.0, "draggable": "False", "value": 299288, "category": "3" }, { "name": "1ADuHQ4PNVAaDhWyn6B9KC6xtCvj44CxiK", "symbolSize": 1.0, "draggable": "False", "value": 501411, "category": "3" }, { "name": "1HWEr4T91QA4FpAtEzX21benidgPQjTvvk", "symbolSize": 1.0, "draggable": "False", "value": 857895, "category": "3" }, { "name": "1PjGwckkrKjopTpSq5oYtv7uarF6cGveMV", "symbolSize": 1.0, "draggable": "False", "value": 230000, "category": "3" }, { "name": "1MYhATB5BoRgp5o4edwpNr8uVauN4e7vjt", "symbolSize": 1.0, "draggable": "False", "value": 121649501, "category": "2" }, { "name": "3CUyUxBZUEQ4Y9eP8tAVRUMdo9BzPML8bz", "symbolSize": 1.0, "draggable": "False", "value": 346367, "category": "3" }, { "name": "37Ppv4Pwfuur3WEWYaMA2cXDaiQKKSt6Cb", "symbolSize": 1.0, "draggable": "False", "value": 417975859, "category": "2" }, { "name": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "symbolSize": 5.385164807134504, "draggable": "False", "value": 601818936, "category": "1" }, { "name": "37XxdTUAzZKvSfy6BgXkMnGy2AFRsyBW7W", "symbolSize": 1.0, "draggable": "False", "value": 89512, "category": "3" }, { "name": "1CGXxKYKApxiNbB8rF99eHUEuuHSQbccmG", "symbolSize": 1.0, "draggable": "False", "value": 763510, "category": "3" }, { "name": "1DGFVuCgPJ9jkMd9f9bTCFZJECJup4CRAV", "symbolSize": 1.0, "draggable": "False", "value": 227193, "category": "3" }, { "name": "1FniSfiuJzncTkoGPMzbywHHYR21mC8iX7", "symbolSize": 1.0, "draggable": "False", "value": 366488, "category": "2" }, { "name": "14SSXFNXzhzSeEHrsvg1RMHshdJjKaAGK6", "symbolSize": 1.0, "draggable": "False", "value": 185000, "category": "3" }, { "name": "18fRs8StnXCUJV3p6kcDu3dqs9RG52J1uL", "symbolSize": 1.0, "draggable": "False", "value": 224535, "category": "3" }, { "name": "1GU4PsZRSCtdgw3GKvJckfZvtNp4ZyKTA1", "symbolSize": 1.0, "draggable": "False", "value": 881489, "category": "3" }, { "name": "1Fve5Q81N3efhipBnNicJjeajeLfAnTmB1", "symbolSize": 1.0, "draggable": "False", "value": 9019677, "category": "2" }, { "name": "1C83geh8TAQ6nFLoSchEEJ4p25rALSbKNA", "symbolSize": 1.0, "draggable": "False", "value": 552491, "category": "2" }, { "name": "1FJhrW2UeBqHGxorbVDAYwsLnPYtiioJ8", "symbolSize": 1.0, "draggable": "False", "value": 44777, "category": "3" }, { "name": "1JDWsJK8dPEw75WVpyF5otB6x72zjvvq93", "symbolSize": 1.0, "draggable": "False", "value": 540000, "category": "2" }, { "name": "1Cv1dBWJyb81r3yUYk8GG9jqhULZNjBpLN", "symbolSize": 1.0, "draggable": "False", "value": 5021930, "category": "2" }, { "name": "1M1oWWi5GkA4SksdSuyPHFz4cvRA7zoDPU", "symbolSize": 1.0, "draggable": "False", "value": 500000, "category": "2" }, { "name": "3GDpJ5c6a5YfhcQg1z3yjGfvDzPKKaVMWp", "symbolSize": 1.0, "draggable": "False", "value": 285944, "category": "2" }, { "name": "1GNzErq2nhixxi375BHTMLqdt2URqYiZmK", "symbolSize": 1.0, "draggable": "False", "value": 643260, "category": "2" }, { "name": "1HFiEcVXSmknGjfj1GzUAicqNv4138Uwdk", "symbolSize": 1.0, "draggable": "False", "value": 201000, "category": "3" }, { "name": "1JJyN5UfZSkPBgnVndjt7Nn7Pnjrs7D7ex", "symbolSize": 1.0, "draggable": "False", "value": 365714, "category": "3" }, { "name": "1LciwUGDMCVk8HudAghrrTZtgo3LiKNUwB", "symbolSize": 1.0, "draggable": "False", "value": 531960, "category": "2" }, { "name": "193a1i77aq6z8ostn7JSXXoWe5iXoArc4X", "symbolSize": 1.0, "draggable": "False", "value": 75439, "category": "2" }, { "name": "1L6imPcpTBZTh2mWw1b5q4LpuRVBTEyF5F", "symbolSize": 1.0, "draggable": "False", "value": 15355, "category": "3" }, { "name": "1E2eEBpwtFqrztKAudR4icf1cBANMXGPvP", "symbolSize": 1.0, "draggable": "False", "value": 304599, "category": "3" }, { "name": "1DZSne6DEDo2p6G1DAdyKddbSn6okfumnh", "symbolSize": 1.0, "draggable": "False", "value": 786367, "category": "2" }, { "name": "37i38EVwLCyeG1JZzGUV7wTHos6A9VUFoU", "symbolSize": 1.0, "draggable": "False", "value": 788000, "category": "2" }, { "name": "1FqqwrRrXFXA3gwzmgGKsZU2F8E18XVkkG", "symbolSize": 1.0, "draggable": "False", "value": 1913077, "category": "2" }, { "name": "1A7JC9GcFVp5iqK5VWzCcUq2E6pgVn9A3R", "symbolSize": 1.0, "draggable": "False", "value": 8209078, "category": "3" }, { "name": "157BMFho8mDzxLeZ7heZCde4ab5eoXysJZ", "symbolSize": 1.0, "draggable": "False", "value": 495384, "category": "2" }, { "name": "3Ho7DtbwBD2m4P8mDAwSCSyN9z21tnCyzH", "symbolSize": 1.0, "draggable": "False", "value": 300960, "category": "2" }, { "name": "15eCha7quoRTv7wL4nvE41j3CiFuXG9Nrj", "symbolSize": 1.0, "draggable": "False", "value": 214200, "category": "2" }, { "name": "18PFD6eCypPpiqTtnKfYyKm3Vu16tToHjk", "symbolSize": 1.0, "draggable": "False", "value": 2864110, "category": "2" }, { "name": "3P7j7TeeR7Yspfg38HgovLMUy2Fm2k7tWM", "symbolSize": 1.0, "draggable": "False", "value": 137200, "category": "3" }, { "name": "19Af14pU7Vfs4aPPBYgxXAgbqS898ptdeT", "symbolSize": 1.0, "draggable": "False", "value": 1153686, "category": "2" }, { "name": "3MTsd91pHkDC4vAJS9PrQgtbtHEei48gDp", "symbolSize": 1.0, "draggable": "False", "value": 238860, "category": "3" }, { "name": "1LTUoGvpEcD4vuVBXhCdyy8FsV5i6qEt6D", "symbolSize": 1.0, "draggable": "False", "value": 4276660, "category": "2" }, { "name": "15scnu8xEKqk4Am5nQhYushzd4wH4gs5MJ", "symbolSize": 1.0, "draggable": "False", "value": 471305, "category": "2" }], [{ "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1GU4PsZRSCtdgw3GKvJckfZvtNp4ZyKTA1", "value": "881489" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1PvNqtEHFd2TA3VyX5kv5wdhV98fVNSrHc", "value": "2232750" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1FJhrW2UeBqHGxorbVDAYwsLnPYtiioJ8", "value": "44777" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "3P7j7TeeR7Yspfg38HgovLMUy2Fm2k7tWM", "value": "137200" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1FUqAaz5rv9urLyEyxt5fzm84ozV4VaHJr", "value": "480000" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1CGXxKYKApxiNbB8rF99eHUEuuHSQbccmG", "value": "763510" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1DGFVuCgPJ9jkMd9f9bTCFZJECJup4CRAV", "value": "227193" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "3GxnppRupfYbr1vxSycUW9e1vMts8p7xR9", "value": "286000" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "3PyD5PsJxhHPX955TS5UfhtbndKhHbqzY8", "value": "522225" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1HFiEcVXSmknGjfj1GzUAicqNv4138Uwdk", "value": "201000" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1JJyN5UfZSkPBgnVndjt7Nn7Pnjrs7D7ex", "value": "365714" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "3CUyUxBZUEQ4Y9eP8tAVRUMdo9BzPML8bz", "value": "346367" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "3MTsd91pHkDC4vAJS9PrQgtbtHEei48gDp", "value": "238860" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "32KetJ9cWbmJzPmNqv5QwSMtqSMbZexV1P", "value": "310560" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1E2eEBpwtFqrztKAudR4icf1cBANMXGPvP", "value": "304599" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "18LEm4aYV8j4SQMmRqch3GVd8ysZDbyWrZ", "value": "9392024" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1CwQVUqEbRXJaUxTgMHdGMSX2rKepweh23", "value": "299288" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1ADuHQ4PNVAaDhWyn6B9KC6xtCvj44CxiK", "value": "501411" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1HWEr4T91QA4FpAtEzX21benidgPQjTvvk", "value": "857895" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1PjGwckkrKjopTpSq5oYtv7uarF6cGveMV", "value": "230000" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "18fRs8StnXCUJV3p6kcDu3dqs9RG52J1uL", "value": "224535" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1HvU758AtcVdKmy9YASNWFnGzeNrnKCnUi", "value": "4198020" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "value": "601818936" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "37XxdTUAzZKvSfy6BgXkMnGy2AFRsyBW7W", "value": "89512" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1L6imPcpTBZTh2mWw1b5q4LpuRVBTEyF5F", "value": "15355" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "1A7JC9GcFVp5iqK5VWzCcUq2E6pgVn9A3R", "value": "8209078" }, { "source": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC", "target": "14SSXFNXzhzSeEHrsvg1RMHshdJjKaAGK6", "value": "185000" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "14Vzs4Mg7wHSYwRh7K9hr1cXEpmfyC4Rzh", "value": "413363" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1Fve5Q81N3efhipBnNicJjeajeLfAnTmB1", "value": "9019677" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1M1oWWi5GkA4SksdSuyPHFz4cvRA7zoDPU", "value": "500000" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1C83geh8TAQ6nFLoSchEEJ4p25rALSbKNA", "value": "552491" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1JDWsJK8dPEw75WVpyF5otB6x72zjvvq93", "value": "540000" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1Cv1dBWJyb81r3yUYk8GG9jqhULZNjBpLN", "value": "5021930" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "17V7CQr92RCi4VqZbq3vWYvTC9jhnAyVHJ", "value": "1000000" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1CYUTwzpxg9hfLjvGEkeze3kacf5y6Uf1V", "value": "104250" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "3GDpJ5c6a5YfhcQg1z3yjGfvDzPKKaVMWp", "value": "285944" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1GNzErq2nhixxi375BHTMLqdt2URqYiZmK", "value": "643260" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1LciwUGDMCVk8HudAghrrTZtgo3LiKNUwB", "value": "531960" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1BYNSxuiKVVmWkk33qMzBmw18TKdqWZkdY", "value": "480437" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "193a1i77aq6z8ostn7JSXXoWe5iXoArc4X", "value": "75439" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1NLh41sRP8QfSkkBrps1wXQXQhyM86HQYh", "value": "29000000" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1DZSne6DEDo2p6G1DAdyKddbSn6okfumnh", "value": "786367" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "37i38EVwLCyeG1JZzGUV7wTHos6A9VUFoU", "value": "788000" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1FqqwrRrXFXA3gwzmgGKsZU2F8E18XVkkG", "value": "1913077" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "157BMFho8mDzxLeZ7heZCde4ab5eoXysJZ", "value": "495384" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "3Ho7DtbwBD2m4P8mDAwSCSyN9z21tnCyzH", "value": "300960" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "15eCha7quoRTv7wL4nvE41j3CiFuXG9Nrj", "value": "214200" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "18PFD6eCypPpiqTtnKfYyKm3Vu16tToHjk", "value": "2864110" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1MYhATB5BoRgp5o4edwpNr8uVauN4e7vjt", "value": "121649501" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "37Ppv4Pwfuur3WEWYaMA2cXDaiQKKSt6Cb", "value": "417975859" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "19Af14pU7Vfs4aPPBYgxXAgbqS898ptdeT", "value": "1153686" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1Nu6fbbqcLhEm6AQAPKY4T5F1GKuyPbiGR", "value": "376518" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1FniSfiuJzncTkoGPMzbywHHYR21mC8iX7", "value": "366488" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "1LTUoGvpEcD4vuVBXhCdyy8FsV5i6qEt6D", "value": "4276660" }, { "source": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs", "target": "15scnu8xEKqk4Am5nQhYushzd4wH4gs5MJ", "value": "471305" }], [{ "name": "-1" }, { "name": "0" }, { "name": "1" }, { "name": "2" }, { "name": "3" }, { "name": "4" }, { "name": "5" }, { "name": "1Nu6fbbqcLhEm6AQAPKY4T5F1GKuyPbiGR" }, { "name": "14Vzs4Mg7wHSYwRh7K9hr1cXEpmfyC4Rzh" }, { "name": "1PvNqtEHFd2TA3VyX5kv5wdhV98fVNSrHc" }, { "name": "1HvU758AtcVdKmy9YASNWFnGzeNrnKCnUi" }, { "name": "1FUqAaz5rv9urLyEyxt5fzm84ozV4VaHJr" }, { "name": "17V7CQr92RCi4VqZbq3vWYvTC9jhnAyVHJ" }, { "name": "1CYUTwzpxg9hfLjvGEkeze3kacf5y6Uf1V" }, { "name": "3GxnppRupfYbr1vxSycUW9e1vMts8p7xR9" }, { "name": "3PyD5PsJxhHPX955TS5UfhtbndKhHbqzY8" }, { "name": "32KetJ9cWbmJzPmNqv5QwSMtqSMbZexV1P" }, { "name": "1BYNSxuiKVVmWkk33qMzBmw18TKdqWZkdY" }, { "name": "1NLh41sRP8QfSkkBrps1wXQXQhyM86HQYh" }, { "name": "18LEm4aYV8j4SQMmRqch3GVd8ysZDbyWrZ" }, { "name": "3HdEE3vDZAAGFTkZ6aCn1a7aCWa4mUbSeC" }, { "name": "1CwQVUqEbRXJaUxTgMHdGMSX2rKepweh23" }, { "name": "1ADuHQ4PNVAaDhWyn6B9KC6xtCvj44CxiK" }, { "name": "1HWEr4T91QA4FpAtEzX21benidgPQjTvvk" }, { "name": "1PjGwckkrKjopTpSq5oYtv7uarF6cGveMV" }, { "name": "1MYhATB5BoRgp5o4edwpNr8uVauN4e7vjt" }, { "name": "3CUyUxBZUEQ4Y9eP8tAVRUMdo9BzPML8bz" }, { "name": "37Ppv4Pwfuur3WEWYaMA2cXDaiQKKSt6Cb" }, { "name": "3KmZMFx3kqgf9xLVUg3rxE2tEhRMU8uFFs" }, { "name": "37XxdTUAzZKvSfy6BgXkMnGy2AFRsyBW7W" }, { "name": "1CGXxKYKApxiNbB8rF99eHUEuuHSQbccmG" }, { "name": "1DGFVuCgPJ9jkMd9f9bTCFZJECJup4CRAV" }, { "name": "1FniSfiuJzncTkoGPMzbywHHYR21mC8iX7" }, { "name": "14SSXFNXzhzSeEHrsvg1RMHshdJjKaAGK6" }, { "name": "18fRs8StnXCUJV3p6kcDu3dqs9RG52J1uL" }, { "name": "1GU4PsZRSCtdgw3GKvJckfZvtNp4ZyKTA1" }, { "name": "1Fve5Q81N3efhipBnNicJjeajeLfAnTmB1" }, { "name": "1C83geh8TAQ6nFLoSchEEJ4p25rALSbKNA" }, { "name": "1FJhrW2UeBqHGxorbVDAYwsLnPYtiioJ8" }, { "name": "1JDWsJK8dPEw75WVpyF5otB6x72zjvvq93" }, { "name": "1Cv1dBWJyb81r3yUYk8GG9jqhULZNjBpLN" }, { "name": "1M1oWWi5GkA4SksdSuyPHFz4cvRA7zoDPU" }, { "name": "3GDpJ5c6a5YfhcQg1z3yjGfvDzPKKaVMWp" }, { "name": "1GNzErq2nhixxi375BHTMLqdt2URqYiZmK" }, { "name": "1HFiEcVXSmknGjfj1GzUAicqNv4138Uwdk" }, { "name": "1JJyN5UfZSkPBgnVndjt7Nn7Pnjrs7D7ex" }, { "name": "1LciwUGDMCVk8HudAghrrTZtgo3LiKNUwB" }, { "name": "193a1i77aq6z8ostn7JSXXoWe5iXoArc4X" }, { "name": "1L6imPcpTBZTh2mWw1b5q4LpuRVBTEyF5F" }, { "name": "1E2eEBpwtFqrztKAudR4icf1cBANMXGPvP" }, { "name": "1DZSne6DEDo2p6G1DAdyKddbSn6okfumnh" }, { "name": "37i38EVwLCyeG1JZzGUV7wTHos6A9VUFoU" }, { "name": "1FqqwrRrXFXA3gwzmgGKsZU2F8E18XVkkG" }, { "name": "1A7JC9GcFVp5iqK5VWzCcUq2E6pgVn9A3R" }, { "name": "157BMFho8mDzxLeZ7heZCde4ab5eoXysJZ" }, { "name": "3Ho7DtbwBD2m4P8mDAwSCSyN9z21tnCyzH" }, { "name": "15eCha7quoRTv7wL4nvE41j3CiFuXG9Nrj" }, { "name": "18PFD6eCypPpiqTtnKfYyKm3Vu16tToHjk" }, { "name": "3P7j7TeeR7Yspfg38HgovLMUy2Fm2k7tWM" }, { "name": "19Af14pU7Vfs4aPPBYgxXAgbqS898ptdeT" }, { "name": "3MTsd91pHkDC4vAJS9PrQgtbtHEei48gDp" }, { "name": "1LTUoGvpEcD4vuVBXhCdyy8FsV5i6qEt6D" }, { "name": "15scnu8xEKqk4Am5nQhYushzd4wH4gs5MJ" }]]
+        var data = linedata[0]
+        var links = linedata[1]
+        var categories = linedata[2]
+        var cont = linedata[3]
+        var mid = linedata[4]
+        var user1 = linedata[5]
+    // response.setHeader("Access-Control-Allow-Origin", "*");
+    myChart.showLoading();//http://gallery.echartsjs.com/asset/get/s/data-1495595908173-rk2KsOfWb.json
+    // $.getJSON('http://127.0.0.1:8080/demo.json',
+    // function (linedata) {
+    // function (jsondta) {
+option = {
+            title: {
+                text: "Bitcoin Criminality Extortion08 Relationship Graph",
+                subtext: "Group11",
+                sublink: 'http:' + mid,
+                top: "top",
+                left: "center"
+            },
+
+            tooltip: {},
+
+            toolbox: {
+                show: true,
+                feature: {
+                    dataView: {
+                        show: true,
+                        readOnly: true
+                    },
+                    restore: {
+                        show: true
+                    },
+                    saveAsImage: {
+                        show: true
+                    }
+                }
+            },
+            animationDuration: 1500,
+            animationEasingUpdate: 'quinticInOut',
+            series: [{
+                name: 'Bitcoin Criminality',
+                type: 'graph',
+                layout: 'force',
+
+                force: {
+                    //initLayout:'circular'
+                    edgeLength: 50,
+                    repulsion: 50,
+                    gravity: 0.2
+                },
+                data: data,
+                roam: true,
+                edgeSymbol: ['circle', 'arrow'],
+                edgeSymbolSize: [2, 5],
+                edgeLabel: {
+                    normal: {
+                        textStyle: {
+                            fontSize: 5
+                        }
+                    }
+                },
+                edgeLabel: {
+                    normal: {
+                        show: false,
+                        formatter: function (x) {
+                            return x.data.value;
+                        }
+                    }
+                },
+                edges: links,
+                categories: categories,
+                focusNodeAdjacency: true,
+                roam: true,
+                label: {
+                    normal: {
+                        position: 'right',
+                        formatter: '{b}'
+                    }
+                },
+                lineStyle: {
+                    normal: {
+                        color: 'target',
+                        curveness: 0
+                    }
+                }
+            }]
+        };
+        // myChart.setOption(option);
+    // });
+    if (option && typeof option === "object") {
+        myChart.hideLoading();
+        myChart.setOption(option, true);
+    }
+    </script>
+</body>
+
+</html>
