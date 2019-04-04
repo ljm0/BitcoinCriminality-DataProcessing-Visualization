@@ -2,7 +2,7 @@
 ![avatar](Overview.png)
 
 ## View the Visualization:
-https://ljm250.github.io/BitcoinCriminality-DataProcessing-Visualization/
+https://ljm0.github.io/BitcoinCriminality-DataProcessing-Visualization/
 
 ![avatar](network.png)
 ## How to use
