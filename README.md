@@ -1,6 +1,6 @@
 # Bitcoin Criminality
 
-# Problem
+# Problems
 ### Is Bitcoin a great tool for criminality?
 - Yes, Ransomwares, black mails and black markets (Silk Road)
 - The FBI initially seized 26,000 bitcoins from accounts on Silk Road, worth about $3.6 million (2013)
