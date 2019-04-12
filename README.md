@@ -1,8 +1,38 @@
 # Bitcoin Criminality
+
+# Problem
+### Is Bitcoin a great tool for criminality?
+- Yes, Ransomwares, black mails and black markets (Silk Road)
+- The FBI initially seized 26,000 bitcoins from accounts on Silk Road, worth about $3.6 million (2013)
+- Still 0.6 million BTC in encrypted wallet
+### How can we find the bitcoin criminality?
+- Traditional: ID? IP address? Bank Account?
+- FBI: Informers + Forum (bitcointalk.org)
+### Is Bitcoin anonymous?
+- Yes: No accounts, No ID required, Cash-like, VPN help
+- No! All transactions are public
+### How can we get the criminal address?
+### Can we distinguish criminal addresses with normal addresses? 
+### What we had?
+- The whole bitcoin blockchain (120GB, Compressed)
+- Identified Addresses: 100 criminal addresses, 100 normal addresses
+(Bitcoin Abuse Database, Bitcoin Who’s Who)
+
+## Framework
 ![avatar](Overview.png)
+### Pre-process data:
+- HDFS/Spark + API
+- Transaction graphs - gipickle
+### Visualization
+- Graph - Simplified graphs
+- Time series transaction
+### Features
+- Statistic analysis
+- Machine Learning Classifier
 
 ## View the Visualization:
 https://ljm0.github.io/BitcoinCriminality-DataProcessing-Visualization/
+- Transaction Graphs
 
 ![avatar](network.png)
 ## How to use
@@ -65,3 +95,8 @@ spark-submit --master yarn
              CryptoTorLocker2015
              CE682FCE869F6E9203A0189DD8CDC9ACD847259D
 ```
+## Improvements:
+### Can we believe the classification? 
+- NO! Overfitting / Validation
+- More data: 100 to 100K
+- Scraper + NLP
