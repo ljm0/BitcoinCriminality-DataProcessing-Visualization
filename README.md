@@ -18,7 +18,7 @@
 - Identified Addresses: 100 criminal addresses, 100 normal addresses
 (Bitcoin Abuse Database, Bitcoin Who’s Who)
 
-## 
+## Solution
 ![avatar](Overview.png)
 ### Pre-process data:
 - HDFS/Spark + API
