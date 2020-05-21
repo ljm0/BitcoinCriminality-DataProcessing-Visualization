@@ -33,8 +33,11 @@
 ## View the Visualization:
 https://ljm0.github.io/BitcoinCriminality-DataProcessing-Visualization/
 - Transaction Graphs
-
 ![avatar](network.png)
+Criminal graph whose nodes tend to cluster together and formed into many small clusters. 
+Normal user graph whose network is more chaotic and disordered.
+Based on Assumption: owners don't share private keys, we can simplified graphs: When a transaction has multiple input addresses, we can safely assume that those addresses belong to the same user. 
+
 ## How to use
 
 ### source
