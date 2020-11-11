@@ -1,4 +1,9 @@
 # Bitcoin Criminality
+- Found Bitcoin criminality by analyzing Bitcoin blockchain data (120GB) by Scala/Python
+- Built a high availability distributed cluster by Hadoop, Spark and Zookeeper
+- Extracted criminal transaction graphs using Scala on DAS4 clusters by Spark
+- Visualized criminal transactions by dynamic and interactive graphs based on Echarts
+- Classified criminal addresses by random forest with 72% accuracy by Scikit-learn
 
 # Problems
 ### Is Bitcoin a great tool for criminality?
